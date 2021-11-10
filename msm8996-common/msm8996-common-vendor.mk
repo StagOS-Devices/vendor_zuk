@@ -85,11 +85,13 @@ PRODUCT_COPY_FILES += \
     vendor/zuk/msm8996-common/proprietary/product/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/zuk/msm8996-common/proprietary/system/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/zuk/msm8996-common/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
+    vendor/zuk/msm8996-common/proprietary/system_ext/etc/permissions/embms.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/embms.xml \
     vendor/zuk/msm8996-common/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/zuk/msm8996-common/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/zuk/msm8996-common/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
     vendor/zuk/msm8996-common/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/zuk/msm8996-common/proprietary/system_ext/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephonyservice.xml \
+    vendor/zuk/msm8996-common/proprietary/system_ext/framework/embmslibrary.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/embmslibrary.jar \
     vendor/zuk/msm8996-common/proprietary/system_ext/framework/qcrilhook.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qcrilhook.jar \
     vendor/zuk/msm8996-common/proprietary/system_ext/lib64/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.api@1.0.so \
     vendor/zuk/msm8996-common/proprietary/system_ext/lib64/com.quicinc.cne.api@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.api@1.1.so \
@@ -102,6 +104,10 @@ PRODUCT_COPY_FILES += \
     vendor/zuk/msm8996-common/proprietary/system_ext/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtextutils.so \
     vendor/zuk/msm8996-common/proprietary/system_ext/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtutils.so \
     vendor/zuk/msm8996-common/proprietary/system_ext/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdiag_system.so \
+    vendor/zuk/msm8996-common/proprietary/system_ext/lib64/libembmsmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libembmsmmosal.so \
+    vendor/zuk/msm8996-common/proprietary/system_ext/lib64/libembmsmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libembmsmmparser_lite.so \
+    vendor/zuk/msm8996-common/proprietary/system_ext/lib64/libembmssqlite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libembmssqlite.so \
+    vendor/zuk/msm8996-common/proprietary/system_ext/lib64/libembmstinyxml.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libembmstinyxml.so \
     vendor/zuk/msm8996-common/proprietary/system_ext/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimscamera_jni.so \
     vendor/zuk/msm8996-common/proprietary/system_ext/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsmedia_jni.so \
     vendor/zuk/msm8996-common/proprietary/system_ext/lib64/libmwqemiptablemgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmwqemiptablemgr.so \
@@ -747,6 +753,7 @@ PRODUCT_PACKAGES += \
     PowerOffAlarm \
     dpmserviceapp \
     QtiTelephonyService \
+    embms \
     imssettings \
     uceShimService \
     ims \
